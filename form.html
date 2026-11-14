@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Casa Flor de Dentro</title>
+    <link rel="icon" type="image/jpeg" href="imagens/om.png">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+
+    <nav class="menu-principal">
+        <header>
+            <img class="logo-menu" src="imagens/logo.png" alt="Logo Casa Flor de Dentro">
+            <p>Refúgio Botânico &amp; Afetivo</p>
+        </header>
+        <a href="index.html">Jardim Inicial</a>
+        <a class="active" href="form.html">Agenda &amp; Adoção</a>
+        <a href="formAction.html">Diário de Inscrição</a>
+        <a href="about.html">Sobre a Casa</a>
+        <footer>
+            <p>Florescer no próprio tempo</p>
+        </footer>
+    </nav>
+
+    <main>
+        <header class="secao-editorial">
+            <span class="caligrafia">Encontros e Horários</span>
+            <h2>Agenda Semanal &amp; Formulário de Acolhimento</h2>
+            <p class="frase-poetica">Às vezes, tudo começa com uma pequena conexão.</p>
+        </header>
+
+        <section class="secao-editorial">
+            <h3>Programação do Jardim</h3>
+            <table class="tabela-editorial">
+                <tr>
+                    <th>Prática / Vivência</th>
+                    <th>Dias e Horários</th>
+                    <th>Vagas por Encontro</th>
+                </tr>
+                <tr>
+                    <td>Yoga Tradicional e Respiração</td>
+                    <td>Terças e Quintas — 08h00 e 18h00</td>
+                    <td>Até 8 participantes</td>
+                </tr>
+                <tr>
+                    <td>Meditação Guiada &amp; Mindfulness</td>
+                    <td>Quartas e Sextas — 19h00</td>
+                    <td>Até 10 participantes</td>
+                </tr>
+                <tr>
+                    <td>Cat Yoga &amp; Conexão com Gatos</td>
+                    <td>Sábados — 10h00</td>
+                    <td>Até 6 participantes</td>
+                </tr>
+                <tr>
+                    <td>Puppy Yoga &amp; Encontros no Gramado</td>
+                    <td>Sábados — 15h30</td>
+                    <td>Até 6 participantes</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="secao-editorial">
+            <h3>Folha de Inscrição e Interesse em Adoção</h3>
+            <p>Preencha todos os campos abaixo para agendar uma prática contemplativa ou iniciar uma entrevista de adoção responsável.</p>
+
+            <form id="formFlorDeDentro" class="formulario-floral" method="GET" action="formAction.html">
+                <fieldset>
+                    <legend>1. Seus Dados Pessoais</legend>
+
+                    <p class="campo">
+                        <label for="nome">Nome Completo (entre 5 e 60 letras):</label>
+                        <input type="text" id="nome" name="nome" placeholder="Ex.: Clara Flores" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s]{5,60}" title="Informe seu nome usando apenas letras e espaços (mínimo de 5 caracteres)." required>
+                    </p>
+
+                    <p class="campo">
+                        <label for="email">E-mail de Contato:</label>
+                        <input type="email" id="email" name="email" placeholder="seu.nome@dominio.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Digite um endereço de e-mail válido." required>
+                    </p>
+
+                    <p class="campo">
+                        <label for="celular">Telefone / WhatsApp (com DDD):</label>
+                        <input type="tel" id="celular" name="celular" placeholder="(XX) XXXXX-XXXX" pattern="\(\d{2}\)\s\d{4,5}-\d{4}" title="Formato esperado: (XX) XXXXX-XXXX" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Intenção de Encontro</legend>
+
+                    <p class="campo">
+                        <label for="interesse">Qual caminho traz você à Casa Flor de Dentro?</label>
+                        <select id="interesse" name="interesse" required>
+                            <option value="" disabled selected>Selecione uma opção...</option>
+                            <option value="Prática de Yoga Tradicional">Prática de Yoga Tradicional</option>
+                            <option value="Vivência de Cat Yoga ou Puppy Yoga">Vivência de Cat Yoga ou Puppy Yoga</option>
+                            <option value="Meditação Guiada e Mindfulness">Meditação Guiada e Mindfulness</option>
+                            <option value="Adoção Responsável — Cão Bento">Adoção Responsável — Cão Bento</option>
+                            <option value="Adoção Responsável — Gata Aurora">Adoção Responsável — Gata Aurora</option>
+                            <option value="Adoção Responsável — Cão Oliver">Adoção Responsável — Cão Oliver</option>
+                        </select>
+                    </p>
+
+                    <p class="campo">
+                        <label>Período de Preferência:</label>
+                        <label class="opcao-inline">
+                            <input type="radio" name="modalidade" value="Manhã Contemplativa" required> Manhã Contemplativa
+                        </label>
+                        <label class="opcao-inline">
+                            <input type="radio" name="modalidade" value="Entardecer no Jardim" required> Entardecer no Jardim
+                        </label>
+                        <label class="opcao-inline">
+                            <input type="radio" name="modalidade" value="Sábado de Encontros" required> Sábado de Encontros
+                        </label>
+                    </p>
+
+                    <p class="campo">
+                        <label for="dataEncontro">Data Desejada para a Visita:</label>
+                        <input type="date" id="dataEncontro" name="dataEncontro" required>
+                    </p>
+
+                    <p class="campo">
+                        <label class="opcao-inline">
+                            <input type="checkbox" id="termosBemEstar" name="termosBemEstar" value="Aceito" required>
+                            Compreendo e concordo que o bem-estar e a vontade dos animais estão sempre acima de qualquer atividade humana.
+                        </label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Registrar Intenção">
+                    <input type="reset" value="Limpar Folha">
+                </p>
+            </form>
+        </section>
+
+        <footer class="rodape-pagina">
+            <p>Cultive a calma. Espalhe afeto.</p>
+        </footer>
+    </main>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
