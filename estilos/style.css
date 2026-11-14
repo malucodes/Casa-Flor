@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&family=Italianno&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F0E5; 
+    color: #263C31; 
+    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, th, legend {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    color: #263C31;
+    letter-spacing: 0.5px;
+}
+
+.caligrafia {
+    font-family: 'Italianno', Georgia, cursive;
+    font-size: 38px;
+    color: #796650; 
+    font-weight: normal;
+    display: block;
+    margin-bottom: 5px;
+}
+
+img.logo-menu {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+}
+
+nav.menu-principal {
+    width: 250px;
+    background-color: #263C31; 
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-right: 2px solid #796650;
+    padding-top: 30px;
+    text-align: center;
+}
+
+nav.menu-principal header {
+    padding: 10px 20px 25px 20px;
+    border-bottom: 1px solid #59664B;
+    margin-bottom: 15px;
+}
+
+nav.menu-principal h1 {
+    color: #FFFDF7;
+    font-size: 26px;
+}
+
+nav.menu-principal p {
+    color: #E9B9BC; 
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+nav.menu-principal a {
+    display: block;
+    color: #F5F0E5;
+    padding: 15px 25px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(161, 170, 145, 0.2);
+    transition: background-color 0.5s ease, padding-left 0.5s ease;
+}
+
+nav.menu-principal a:hover:not(.active) {
+    background-color: #59664B; 
+    color: #FFFDF7;
+    padding-left: 32px;
+}
+
+nav.menu-principal a.active {
+    background-color: #D69A9D; 
+    color: #263C31;
+    font-weight: 700;
+}
+
+nav.menu-principal footer {
+    padding: 25px 20px;
+    color: #A1AA91; 
+    font-size: 13px;
+    font-style: italic;
+}
+
+main {
+    margin-left: 250px;
+    padding: 45px 60px;
+    max-width: 1200px;
+}
+
+header.abertura-jardim {
+    background-color: #E7DDCA; 
+    border: 1px solid #A1AA91;
+    padding: 45px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 45px;
+    box-shadow: 0 8px 24px rgba(38, 60, 49, 0.06);
+}
+
+header.abertura-jardim h2 {
+    font-size: 46px;
+    margin-bottom: 8px;
+}
+
+header.abertura-jardim p.subtitulo {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 22px;
+    font-style: italic;
+    color: #59664B;
+    margin-bottom: 25px;
+}
+
+figure.moldura-analogica {
+    background-color: #FFFDF7; 
+    padding: 14px 14px 22px 14px;
+    border: 1px solid #D69A9D;
+    border-radius: 6px;
+    max-width: 750px;
+    margin: 0 auto 25px auto;
+    box-shadow: 2px 4px 14px rgba(121, 102, 80, 0.12);
+}
+
+img.foto-analogica {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 4px;
+    filter: sepia(18%) contrast(95%) saturate(85%) brightness(98%);
+    background-color: #E7DDCA;
+    display: block;
+}
+
+figcaption {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    color: #796650;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+hr.divisor-botanico {
+    border: none;
+    border-top: 1px solid #A1AA91;
+    margin: 45px 0;
+    text-align: center;
+    overflow: visible;
+}
+
+hr.divisor-botanico::after {
+    content: "❀ ❦ ❀";
+    background-color: #F5F0E5;
+    color: #D69A9D;
+    padding: 0 16px;
+    position: relative;
+    top: -13px;
+    font-size: 16px;
+}
+
+section.secao-editorial {
+    margin-bottom: 45px;
+}
+
+section.secao-editorial h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p.frase-poetica {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #796650;
+    margin-bottom: 25px;
+}
+
+section.grade-quatro {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+section.grade-tres {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+article.cartao-pilar {
+    background-color: #FFFDF7;
+    border: 1px solid #E7DDCA;
+    border-top: 4px solid #59664B;
+    padding: 22px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+article.cartao-fotografia {
+    background-color: #FFFDF7;
+    border: 1px solid #E7DDCA;
+    padding: 16px 16px 24px 16px;
+    border-radius: 8px;
+    box-shadow: 2px 5px 15px rgba(121, 102, 80, 0.1);
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+article.cartao-fotografia:hover {
+    transform: translateY(-4px);
+}
+
+article.cartao-fotografia h4 {
+    font-size: 24px;
+    margin: 12px 0 6px 0;
+}
+
+article.cartao-fotografia p {
+    font-size: 14px;
+    color: #59664B;
+    margin-bottom: 15px;
+}
+
+span.etiqueta-botanica {
+    display: inline-block;
+    background-color: #E9B9BC;
+    color: #263C31;
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+article.diario-anotacao {
+    background-color: #FFFDF7;
+    border: 1px solid #D69A9D;
+    border-left: 6px solid #263C31;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(121, 102, 80, 0.08);
+}
+
+ul.lista-botanica {
+    list-style-type: circle;
+    margin-left: 25px;
+    color: #263C31;
+}
+
+ul.lista-botanica li {
+    margin-bottom: 8px;
+}
+
+dl.lista-definicao dt {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 21px;
+    font-weight: 700;
+    color: #263C31;
+    margin-top: 12px;
+}
+
+dl.lista-definicao dd {
+    margin-left: 20px;
+    color: #59664B;
+    margin-bottom: 10px;
+}
+
+.btn-editorial, input[type=submit], input[type=reset] {
+    background-color: #263C31;
+    color: #FFFDF7;
+    padding: 11px 24px;
+    border: 1px solid #263C31;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.btn-editorial:hover, input[type=submit]:hover {
+    background-color: #D69A9D;
+    color: #263C31;
+    border-color: #D69A9D;
+}
+
+input[type=reset] {
+    background-color: #E7DDCA;
+    color: #796650;
+    border-color: #A1AA91;
+    margin-left: 10px;
+}
+
+input[type=reset]:hover {
+    background-color: #A1AA91;
+    color: #FFFDF7;
+}
+
+aside.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 60, 49, 0.65);
+}
+
+section.modal-content {
+    background-color: #FFFDF7;
+    margin: 8% auto;
+    padding: 40px;
+    width: 55%;
+    max-width: 600px;
+    border: 2px solid #D69A9D;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+section.modal-content h3 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+section.modal-content p {
+    margin-bottom: 18px;
+    color: #59664B;
+}
+
+table.tabela-editorial {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFDF7;
+    margin: 20px 0 35px 0;
+}
+
+table.tabela-editorial th, table.tabela-editorial td {
+    border: 1px solid #A1AA91;
+    padding: 14px 18px;
+    text-align: left;
+}
+
+table.tabela-editorial th {
+    background-color: #263C31;
+    color: #FFFDF7;
+    font-size: 18px;
+}
+
+table.tabela-editorial tr:nth-child(even) {
+    background-color: #E7DDCA;
+}
+
+table.tabela-editorial tr:hover {
+    background-color: #E9B9BC;
+}
+
+form.formulario-floral {
+    background-color: #FFFDF7;
+    padding: 35px;
+    border: 1px solid #A1AA91;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(121, 102, 80, 0.08);
+}
+
+fieldset {
+    border: 1px solid #D69A9D;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+legend {
+    padding: 0 12px;
+    font-size: 22px;
+    color: #796650;
+}
+
+p.campo {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #263C31;
+}
+
+label.opcao-inline {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=date], select {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #F5F0E5;
+    border: 1px solid #A1AA91;
+    border-bottom: 2px solid #796650;
+    border-radius: 6px;
+    font-family: 'DM Sans', Arial, sans-serif;
+    color: #263C31;
+}
+
+footer.rodape-pagina {
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid #A1AA91;
+    text-align: center;
+    color: #796650;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+}
