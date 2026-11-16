@@ -1,8 +1,5 @@
-/* script/script.js */
-
 document.addEventListener('DOMContentLoaded', function() {
 
-    // 1. Array e sorteio de reflexões poéticas da Casa Flor de Dentro
     const reflexoes = [
         "Florescer também é respeitar o próprio tempo.",
         "Respire. Você não precisa ter todas as respostas agora.",
@@ -24,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // 2. Atribuição de eventos aos botões de Modal na Home via querySelectorAll e laço for
     const botoesModal = document.querySelectorAll('.acionar-modal');
     for (let i = 0; i < botoesModal.length; i++) {
         botoesModal[i].addEventListener('click', function(event) {
@@ -38,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
         btnFecharModal.addEventListener('click', fecharModal);
     }
 
-    // 3. Máscara Regex de Telefone e validação complementar no formulário (form.html)
     const celularInput = document.getElementById('celular');
     if (celularInput) {
         celularInput.addEventListener('keydown', mascaraTelefone);
@@ -56,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // 4. Recuperação e tratamento dos dados enviados via método GET (formAction.html)
     const diarioResultado = document.getElementById('resultadoGet');
     if (diarioResultado) {
         const params = new URLSearchParams(window.location.search);
@@ -95,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Controle da Janela Modal utilizando estrutura condicional switch
 function abrirModalCatalogo(item) {
     const titulo = document.getElementById('modalTitulo');
     const descricao = document.getElementById('modalDescricao');
@@ -145,7 +138,6 @@ function fecharModal() {
     document.getElementById('janelaModal').style.display = 'none';
 }
 
-// Função de Máscara de Telefone baseada em Expressão Regular (Regex)
 function mascaraTelefone(event) {
     let tecla = event.key;
     let telefone = event.target.value.replace(/\D+/g, "");

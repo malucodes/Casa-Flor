@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Casa Flor de Dentro</title>
-    <link rel="icon" type="image/jpeg" href="imagens/om.png">
+    <link rel="icon" type="image/png" href="imagens/om.png">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
@@ -49,16 +49,16 @@
             <p class="frase-poetica">"Que a gentileza seja parte do caminho."</p>
 
             <dl class="lista-definicao">
-                <dt>𖤓 Florescer | Autoconhecimento e Movimento Consciente</dt>
+                <dt>Florescer | Autoconhecimento e Movimento Consciente</dt>
                 <dd>Nossas práticas de Yoga Tradicional, Puppy Yoga e Cat Yoga não buscam performance física, mas sim a escuta amorosa do próprio corpo. Movimentar-se com suavidade ajuda a dissolver tensões e a cultivar um estado de acolhimento interno.</dd>
 
-                <dt>☯ Respirar | Silêncio, Mindfulness e Contemplação</dt>
+                <dt>Respirar | Silêncio, Mindfulness e Contemplação</dt>
                 <dd>Inspirados pela ética da compaixão e pela atenção plena das tradições orientais, nossos encontros de meditação guiada convidam você a desacelerar. Respirar fundo lembra que não precisamos ter todas as respostas agora.</dd>
 
-                <dt>⟢ Conectar | Encontros Espontâneos entre Espécies</dt>
+                <dt>Conectar | Encontros Espontâneos entre Espécies</dt>
                 <dd>O convívio com cães e gatos em nosso espaço acontece sem roteiros forçados. A presença serena dos animais ensina sobre o momento presente, enquanto o afeto tranquilo dos praticantes oferece a eles socialização suave e segura.</dd>
 
-                <dt>𖤝 Acolher | Proteção Animal e Adoção Responsável</dt>
+                <dt>Acolher | Proteção Animal e Adoção Responsável</dt>
                 <dd>Atuamos como ponte entre abrigos parceiros, protetores dedicados e famílias conscientes. Parte integral das contribuições de nossas aulas é destinada ao cuidado veterinário, alimentação e bem-estar dos animais que aguardam um lar definitivo.</dd>
             </dl>
         </section>
@@ -105,10 +105,48 @@
             </table>
         </section>
 
+        <section class="secao-editorial centralizado">
+            <p class="frase-poetica">"Descubra as raízes que estruturam o nosso jardim digital."</p>
+            <button type="button" class="btn-editorial" onclick="document.getElementById('modalAutoria').style.display='block'">Ler Detalhes do Projeto e Autoria</button>
+        </section>
+
         <footer class="rodape-pagina">
-            <p>Casa Flor de Dentro Cultive a calma. Espalhe afeto.</p>
+            <p>Casa Flor de Dentro | Cultive a calma. Espalhe afeto.</p>
         </footer>
     </main>
+
+    <aside id="modalAutoria" class="modal">
+        <section class="modal-content modal-leitura">
+            <span class="fechar-x" onclick="document.getElementById('modalAutoria').style.display='none'" title="Fechar Modal">&times;</span>
+
+            <span class="caligrafia centralizado">Ficha Técnica do Jardim</span>
+            <h3 class="centralizado">Apresentação do Projeto Front-End</h3>
+            
+            <article>
+                <p>O projeto <strong>Casa Flor de Dentro</strong> foi desenvolvido como uma avaliação prática focada exclusivamente no desenvolvimento web client-side (front-end). Toda a interface e identidade visual foram concebidas aplicando estritamente HTML, CSS e JavaScript puros, sem dependência de frameworks externos.</p>
+                
+                <hr class="linha-tracejada">
+                
+                <h4>Evidências do Tratamento dos Elementos</h4>
+                
+                <dl class="lista-definicao">
+                    <dt>Estruturação em HTML5 (Unidade 1)</dt>
+                    <dd>Uso de tags semânticas (<code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code> e <code>&lt;aside&gt;</code>), tabelas com <code>rowspan</code> e <code>colspan</code>, listas de definição (<code>&lt;dl&gt;</code>), formulários e referências por caminhos relativos para total portabilidade.</dd>
+
+                    <dt>Estilização com CSS3 (Unidade 2)</dt>
+                    <dd>Regras de estilo isoladas em arquivo externo (<code>estilos/style.css</code>) vinculado via tag <code>&lt;link&gt;</code> no <code>&lt;head&gt;</code>. Aplicação do Box Model, layout em Grid, pseudoclasses (<code>:hover</code>, <code>:nth-child</code>) e paleta orgânica <em>Poetic Vintage Botanical</em>.</dd>
+
+                    <dt>Interatividade em JavaScript (Unidades 3 e 4)</dt>
+                    <dd>Programação cliente em arquivo externo (<code>script/script.js</code>) utilizando <code>let</code> e <code>const</code>, eventos registrados com <code>addEventListener</code> após o <code>DOMContentLoaded</code>, validação e máscara de telefone com Expressões Regulares (Regex), controle de janelas modais e leitura de parâmetros enviados via método <code>GET</code>.</dd>
+                </dl>
+                
+                <hr class="linha-tracejada">
+                <p><strong>Autor(a):</strong> Maria Luiza Benevides Cunha</p>
+                <p><strong>Avaliação:</strong> Atividade Somativa 1 — Fundamentos de Programação Web</p>
+            </article>
+            
+        </section>
+    </aside>
 
     <script src="script/script.js"></script>
 </body>

@@ -161,7 +161,7 @@ hr.divisor-botanico {
 }
 
 hr.divisor-botanico::after {
-    content: "❀ ❦ ❀";
+    content: "***";
     background-color: #F5F0E5;
     color: #D69A9D;
     padding: 0 16px;
@@ -321,18 +321,52 @@ aside.modal {
     width: 100%;
     height: 100%;
     background-color: rgba(38, 60, 49, 0.65);
+    overflow-y: auto;
+    z-index: 1000;
 }
 
 section.modal-content {
     background-color: #FFFDF7;
-    margin: 8% auto;
-    padding: 40px;
-    width: 55%;
-    max-width: 600px;
+    margin: 4% auto;
+    padding: 35px 40px;
+    width: 65%;
+    max-width: 680px;
+    max-height: 85vh; 
+    overflow-y: auto; 
     border: 2px solid #D69A9D;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    position: relative;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+section.modal-content.modal-leitura {
+    text-align: left;
+}
+
+span.fechar-x {
+    position: absolute;
+    top: 15px;
+    right: 22px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #796650;
+    cursor: pointer;
+    line-height: 1;
+}
+
+span.fechar-x:hover {
+    color: #263C31;
+}
+
+.centralizado {
+    text-align: center;
+}
+
+hr.linha-tracejada {
+    border: none;
+    border-top: 1px dashed #A1AA91;
+    margin: 18px 0;
 }
 
 section.modal-content h3 {
